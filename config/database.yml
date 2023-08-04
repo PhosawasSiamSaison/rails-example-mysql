@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: rails_example_mysql_production
-  username: rails_example_mysql
+  username: root
   password: <%= ENV['RAILS_EXAMPLE_MYSQL_DATABASE_PASSWORD'] %>

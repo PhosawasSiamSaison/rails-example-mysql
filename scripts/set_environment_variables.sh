@@ -6,3 +6,4 @@ function set_parameter {
 }
 echo "export RAILS_ENV=production" >> ~/.bashrc
 set_parameter "SECRET_KEY_BASE"
+set_parameter "RAILS_EXAMPLE_MYSQL_DATABASE_PASSWORD"
