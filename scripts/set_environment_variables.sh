@@ -5,5 +5,5 @@ function set_parameter {
   [ "$(eval echo "$"$1)" == "" ] && echo "export ${SSM_PARAM_NAME}=${SSM_VALUE}" >> ~/.bashrc
 }
 echo "export RAILS_ENV=production" >> ~/.bashrc
-set_parameter "SECRET_KEY_BASE"
+set_parameter "SECRET_KEY_TEST_BASE"
 set_parameter "RAILS_EXAMPLE_MYSQL_DATABASE_PASSWORD"
