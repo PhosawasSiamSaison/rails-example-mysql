@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: rails_example_mysql_production
-  username: root
-  password: <%= ENV['RAILS_EXAMPLE_MYSQL_DATABASE_PASSWORD'] %>
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  post: 3306
