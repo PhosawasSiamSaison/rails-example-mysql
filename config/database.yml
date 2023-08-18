@@ -52,4 +52,5 @@ production:
   database: <%= ENV['RDS_DATABASE'] %>
   username: <%= ENV['RDS_USERNAME'] %>
   password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOST'] %>
   post: 3306
