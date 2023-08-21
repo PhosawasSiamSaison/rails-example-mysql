@@ -1,2 +1,2 @@
 cd /var/www/rails-example-mysql/
-rails db:migrate
+apache2ctl restart

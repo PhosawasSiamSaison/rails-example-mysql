@@ -17,5 +17,5 @@ hooks:
     - location: scripts/set_environment_variables.sh
       runas: ubuntu
     # run if have new migrate
-    # - location: scripts/run-db-migrations.sh
-    #   runas: ubuntu
+    - location: scripts/restart_apache.sh
+      runas: ubuntu
