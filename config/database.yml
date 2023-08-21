@@ -61,5 +61,5 @@ staging:
   username: <%= ENV['RDS_USERNAME'] %>
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOST'] %>
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
   port: 3306
