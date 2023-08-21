@@ -58,7 +58,7 @@ production:
 staging:
   <<: *default
   database: <%= ENV['RDS_DATABASE'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
+  username: new_admin
+  password: north1116
   host: <%= ENV['RDS_HOST'] %>
   port: 3306
