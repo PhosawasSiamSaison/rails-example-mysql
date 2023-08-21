@@ -1,2 +1,2 @@
 cd /var/www/rails-example-mysql/
-apache2ctl restart
+sudo apache2ctl restart
