@@ -61,8 +61,8 @@ production:
 
 staging:
   <<: *default
-  database: jv-service-staging
-  username: mysql_admin
-  password: north1116
-  host: jv-service-staging.cnoujxkkumlw.ap-southeast-2.rds.amazonaws.com
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOST'] %>
   port: 3306
