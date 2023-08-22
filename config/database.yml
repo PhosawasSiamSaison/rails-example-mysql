@@ -57,6 +57,7 @@ production:
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOST'] %>
   port: 3306
+  DATABASE_URL: <%= ENV['DATABASE_URL'] %>
 
 staging:
   <<: *default
@@ -65,3 +66,4 @@ staging:
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOST'] %>
   port: 3306
+  DATABASE_URL: <%= ENV['DATABASE_URL'] %>
